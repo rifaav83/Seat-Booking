@@ -14,8 +14,7 @@ function MyBookings() {
 
   const pricePerSeat = 100
 
-  const totalPrice =
-    bookedSeats.length * pricePerSeat
+  const totalPrice = bookedSeats.length * pricePerSeat
 
   function handleCancelBooking() {
     if (bookedSeats.length === 0) {
@@ -25,22 +24,16 @@ function MyBookings() {
     const updatedBookings = {
       ...bookings
     }
-
     delete updatedBookings[dateKey]
-
     setBookings(updatedBookings)
   }
-
   return (
     <section className="my-bookings">
-
       <div className="my-bookings-header">
-
         <div>
           <p className="card-label">
             MY BOOKINGS
           </p>
-
           <h3>
             Your booked seats
           </h3>
