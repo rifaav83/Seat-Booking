@@ -130,5 +130,5 @@ function BookingSummary() {
   )
 }
 
-export default BookingSummary
+export default  BookingSummary    
 
